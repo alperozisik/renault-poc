@@ -48,6 +48,8 @@ function onLoad(superOnLoad) {
 	page.android.onBackButtonPressed = back;
 	btnBack.onPress = back;
 	flNumaraDegistir.onTouchEnded = back;
+	flNumaraDegistir.text = "";
+	flNumaraDegistir.htmlText = '<span style="text-decoration: underline;">Numaranızı değiştirin</span>';//"<u>" + flNumaraDegistir.text + "</u>";
 	const tbCode = page.tbCode;
 
 	function focusTbCode() {

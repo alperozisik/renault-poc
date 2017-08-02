@@ -102,7 +102,7 @@ function onLoad(superOnLoad) {
 	var swipeView = new SwipeView({
 		page: page,
 		flexGrow: 1,
-		pages: [pgIslemler, pgBelgeler, pgDetaylar, ],
+		pages: [pgIslemler, pgDetaylar, pgBelgeler],
 		onStateChanged: function(state) {
 			if (SwipeView.State.IDLE === state) {
 				//	labelState.text = "State: IDLE";

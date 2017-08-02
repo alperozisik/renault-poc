@@ -1,6 +1,3 @@
-/* 
-		You can modify its contents.
-*/
 const extend = require('js-base/core/extend');
 const PgGirisDesign = require('ui/ui_pgGiris');
 const KeyboardType = require('sf-core/ui/keyboardtype');
@@ -10,6 +7,13 @@ const inactiveColor = Color.create("#ECF0F1");
 const activeColor = Color.create("#FFCC33");
 const Application = require("sf-core/application");
 const Router = require("sf-core/ui/router");
+const VMasker = require('vanilla-masker/lib/vanilla-masker');
+// const System = require('sf-core/device/system');
+const pattern = "(999) 999 99 99";
+const phoneUtil = require('google-libphonenumber').PhoneNumberUtil.getInstance();
+const PNT = require('google-libphonenumber').PhoneNumberType;
+var PNF = require('google-libphonenumber').PhoneNumberFormat;
+
 
 const PgGiris = extend(PgGirisDesign)(
 	// Constructor
@@ -47,19 +51,25 @@ function onLoad(superOnLoad) {
 	tbTelefon.android.elevation = 0;
 	tbTelefon.onTextChanged = function(e) {
 		var text = tbTelefon.text;
-		if (typeof e === "string") {
-			text += e;
-			if (e === "")
-				text = text.substr(0, text.length - 1);
+		var maskedText = VMasker.toPattern(text, pattern);
+		tbTelefon.text = maskedText;
+		var isValid = false;
+		try {
+			var phoneNumber = phoneUtil.parse(maskedText, global.Device.language);
+			isValid = phoneUtil.isValidNumber(phoneNumber)
+				&& phoneUtil.getNumberType(phoneNumber) === PNT.MOBILE;
 		}
-		btnGiris.enabled = text.length >= 10;
+		catch (ex) {
+			isValid = false;
+		}
+		btnGiris.enabled = isValid;
 	};
 	btnGiris.onPress = nextPage.bind(page);
 	btnGiris.backgroundColor = {
 		normal: activeColor,
 		disabled: inactiveColor
 	};
-	btnGiris.enabled = tbTelefon.text.length >= 10;
+	btnGiris.enabled = false;
 
 	page.android.onBackButtonPressed = function() {
 		Application.exit();
@@ -76,8 +86,11 @@ function nextPage() {
 		return;
 
 	tbTelefon.removeFocus();
+	var phoneNumber = phoneUtil.parse(tbTelefon.text, global.Device.language);
+
+	var telefon = phoneUtil.format(phoneNumber, PNF.NATIONAL);
 	Router.go("pgSMS", {
-		telefon: tbTelefon.text
+		telefon: telefon
 	});
 
 }

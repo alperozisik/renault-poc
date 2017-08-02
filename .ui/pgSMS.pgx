@@ -585,6 +585,7 @@
 				"backgroundColor": "rgba( 64, 64, 64, 1 )",
 				"marginLeft": -2,
 				"top": -2,
+				"visible": false,
 				"flexProps": {
 					"flexGrow": null
 				}
@@ -594,7 +595,7 @@
 				"height": 1,
 				"width": null,
 				"touchEnabled": true,
-				"visible": true,
+				"visible": false,
 				"backgroundColor": "rgba( 64, 64, 64, 1 )",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -654,6 +655,7 @@
 				"textColor": "rgba( 64, 64, 64, 1 )",
 				"textAlignment": "MIDCENTER",
 				"marginTop": 72,
+				"usePageVariable": true,
 				"font": {
 					"size": 26,
 					"bold": false,
@@ -666,8 +668,7 @@
 				},
 				"name": "lblTitle",
 				"parent": "pgSMS",
-				"children": [],
-				"usePageVariable": true
+				"children": []
 			}
 		},
 		{
@@ -1726,7 +1727,7 @@
 				"name": "imageView1",
 				"parent": "flexLayout5_1",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/ileri.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.2536099786106878"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/ileri.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.8985550282124586"
 			}
 		}
 	]
