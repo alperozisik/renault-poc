@@ -55,7 +55,7 @@ function onLoad(superOnLoad) {
 		tbTelefon.text = maskedText;
 		var isValid = false;
 		try {
-			var phoneNumber = phoneUtil.parse(maskedText, global.Device.language);
+			var phoneNumber = phoneUtil.parse(maskedText, "tr");
 			isValid = phoneUtil.isValidNumber(phoneNumber)
 				&& phoneUtil.getNumberType(phoneNumber) === PNT.MOBILE;
 		}
@@ -86,7 +86,7 @@ function nextPage() {
 		return;
 
 	tbTelefon.removeFocus();
-	var phoneNumber = phoneUtil.parse(tbTelefon.text, global.Device.language);
+	var phoneNumber = phoneUtil.parse(tbTelefon.text, "tr");
 
 	var telefon = phoneUtil.format(phoneNumber, PNF.NATIONAL);
 	Router.go("pgSMS", {

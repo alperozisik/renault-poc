@@ -33,8 +33,8 @@
 					"flexLayout5"
 				],
 				"name": "pgGiris",
-				"width": 187.5,
-				"height": 333.5
+				"width": 375,
+				"height": 667
 			}
 		},
 		{
@@ -112,7 +112,7 @@
 				"name": "imgLogo",
 				"parent": "pgGiris",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/logo.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.5312344990289939"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/logo.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
 			}
 		},
 		{
@@ -133,7 +133,8 @@
 				"marginLeft": 37,
 				"marginRight": 37,
 				"font": {
-					"family": "Lato"
+					"family": "Lato",
+					"size": 16
 				}
 			},
 			"className": ".label",
@@ -541,7 +542,7 @@
 				"name": "imageView1",
 				"parent": "flexLayout5",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/ileri.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.023404526163175676"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/ileri.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
 			}
 		}
 	]

@@ -9,6 +9,8 @@ const System = require('sf-core/device/system');
 const Color = require('sf-core/ui/color');
 const inactiveColor = Color.create("#ECF0F1");
 const activeColor = Color.create("#FFCC33");
+const Animator = require('sf-core/ui/animator');
+const Screen = require('sf-core/device/screen');
 
 const PgSMS = extend(PgSMSDesign)(
 	// Constructor
@@ -39,21 +41,23 @@ function onShow(superOnShow, data) {
 function onLoad(superOnLoad) {
 	superOnLoad();
 	const page = this;
-	const btnBack = page.btnBack;
 	const flNumaraDegistir = page.flNumaraDegistir;
 	const btnOnayla = page.btnOnayla;
 
-	btnBack.backgroundImage = Image.createFromFile("images://geri.png");
-	btnBack.android && (btnBack.android.elevation = 0);
 	page.android.onBackButtonPressed = back;
-	btnBack.onPress = back;
+	page.flBack.onTouchEnded = back;
 	flNumaraDegistir.onTouchEnded = back;
-	flNumaraDegistir.text = "";
-	flNumaraDegistir.htmlText = '<span style="text-decoration: underline;">Numaranızı değiştirin</span>';//"<u>" + flNumaraDegistir.text + "</u>";
+	page.lblTelefon.width = System.OS === "iOS" ? 87 : 100;
+	page.lblNumara.htmlText = '<p><u>Numaran&#305;z&#305; de&#287;i&#351;tirin</u></p>';
+	page.lblNumara.ios.scrollEnabled = false;
 	const tbCode = page.tbCode;
 
 	function focusTbCode() {
 		tbCode.requestFocus();
+		if (System.OS === "Android" && tbCode.text.length > 0) {
+			var pos = tbCode.text.length;
+			tbCode.nativeObject.setSelection(pos );
+		}
 	}
 
 	page.flDigit1.onTouchEnded = focusTbCode;
@@ -143,6 +147,8 @@ function onayla() {
 	const tbCode = page.tbCode;
 	const lblTitle = page.lblTitle;
 	const lblHata = page.lblHata;
+	const flPin = page.flPin;
+	const btnOnayla = page.btnOnayla;
 
 	var code = tbCode.text;
 
@@ -154,6 +160,37 @@ function onayla() {
 	if (validCodes.indexOf(code) === -1) { // invalid
 		lblHata.visible = true;
 		lblTitle.text = "SMS kodu hatalı!";
+		System.vibrate();
+		var bounces = 6;
+		var totalDuration = 400;
+		var counter = 3;
+		var delay = totalDuration / (((bounces + 1) * bounces) / 2);
+		var originalMarginLeft = flPin.marginLeft;
+		var originalMarginRight = flPin.marginRight;
+		btnOnayla.touchEnabled = false;
+		Animator.animate(page.layout, delay, function() {
+			flPin.marginLeft = (Screen.width) / counter++;
+			flPin.marginRight = 0;
+		}).then(delay * 2, function() {
+			flPin.marginLeft = 0;
+			flPin.marginRight = (Screen.width) / counter++;
+		}).then(delay * 3, function() {
+			flPin.marginLeft = (Screen.width) / counter++;
+			flPin.marginRight = 0;
+		}).then(delay * 4, function() {
+			flPin.marginLeft = 0;
+			flPin.marginRight = (Screen.width) / counter++;
+		}).then(delay * 5, function() {
+			flPin.marginLeft = (Screen.width) / counter++;
+			flPin.marginRight = 0;
+		}).then(delay * 6, function() {
+			flPin.marginLeft = originalMarginLeft;
+			flPin.marginRight = originalMarginRight;
+		}).complete(function() {
+			btnOnayla.touchEnabled = true;
+			tbCode.text = "";
+			tbCode.onTextChanged();
+		});
 	}
 	else {
 		tbCode.removeFocus();
