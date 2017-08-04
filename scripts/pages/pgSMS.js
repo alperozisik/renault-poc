@@ -34,7 +34,7 @@ function onShow(superOnShow, data) {
 		if (data.telefon)
 			lblTelefon.text = data.telefon;
 	}
-
+	page.tbCode.requestFocus();
 }
 
 // Page.onLoad -> This event is called once when page is created.
@@ -56,7 +56,7 @@ function onLoad(superOnLoad) {
 		tbCode.requestFocus();
 		if (System.OS === "Android" && tbCode.text.length > 0) {
 			var pos = tbCode.text.length;
-			tbCode.nativeObject.setSelection(pos );
+			tbCode.nativeObject.setSelection(pos);
 		}
 	}
 
@@ -67,12 +67,9 @@ function onLoad(superOnLoad) {
 
 
 	tbCode.onTextChanged = function(e) {
-
-
-		// console.log("e =" + JSON.stringify(e));
-		// console.log("text = " + tbCode.text);
+		if (page.animating)
+			return;
 		var text = tbCode.text;
-
 		if (typeof e === "string") {
 			if (tbCode.text.length > 4)
 				tbCode.text = tbCode.text.substr(0, 4);
@@ -96,6 +93,7 @@ function onLoad(superOnLoad) {
 				// console.log(typeof NSMakeRange);
 				// tbCode.nativeObject.selectedRange = NSMakeRange(4, 0);
 			}
+
 		}
 
 
@@ -105,6 +103,8 @@ function onLoad(superOnLoad) {
 		setCodeContent(text, 4);
 
 		btnOnayla.enabled = text.length === 4;
+		if (text.length === 4)
+			onayla.call(page);
 	};
 
 	function setCodeContent(text, index) {
@@ -158,12 +158,13 @@ function onayla() {
 	var validCodes = ["1234", "0000"];
 
 	if (validCodes.indexOf(code) === -1) { // invalid
+		page.animating = true;
 		lblHata.visible = true;
 		lblTitle.text = "SMS kodu hatalı!";
 		System.vibrate();
 		var bounces = 6;
 		var totalDuration = 400;
-		var counter = 3;
+		var counter = 5;
 		var delay = totalDuration / (((bounces + 1) * bounces) / 2);
 		var originalMarginLeft = flPin.marginLeft;
 		var originalMarginRight = flPin.marginRight;
@@ -190,6 +191,7 @@ function onayla() {
 			btnOnayla.touchEnabled = true;
 			tbCode.text = "";
 			tbCode.onTextChanged();
+			page.animating = false;
 		});
 	}
 	else {

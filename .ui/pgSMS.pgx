@@ -36,11 +36,11 @@
 					"lblTitle",
 					"lblHata",
 					"flPin",
-					"flexLayout5_1"
+					"flOnayla"
 				],
 				"name": "pgSMS",
-				"width": 750,
-				"height": 1334
+				"width": 187.5,
+				"height": 333.5
 			}
 		},
 		{
@@ -665,6 +665,7 @@
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
 				"borderWidth": 0,
+				"usePageVariable": true,
 				"flexProps": {
 					"alignSelf": "AUTO",
 					"direction": "INHERIT",
@@ -683,8 +684,7 @@
 					"flDigit3",
 					"flDigit4",
 					"tbCode"
-				],
-				"usePageVariable": true
+				]
 			}
 		},
 		{
@@ -1518,6 +1518,8 @@
 				"width": 225,
 				"height": 46,
 				"marginTop": 44,
+				"usePageVariable": true,
+				"visible": false,
 				"flexProps": {
 					"alignSelf": "CENTER"
 				}
@@ -1527,7 +1529,7 @@
 				"height": 46,
 				"width": 225,
 				"touchEnabled": true,
-				"visible": true,
+				"visible": false,
 				"backgroundColor": "#FFFFFF",
 				"alpha": 1,
 				"borderColor": "rgba(0,0,0,1)",
@@ -1543,12 +1545,13 @@
 					"flexDirection": "COLUMN",
 					"positionType": "RELATIVE"
 				},
-				"name": "flexLayout5_1",
+				"name": "flOnayla",
 				"parent": "pgSMS",
 				"children": [
 					"btnOnayla",
 					"imageView1"
-				]
+				],
+				"usePageVariable": true
 			}
 		},
 		{
@@ -1600,7 +1603,7 @@
 					"flexGrow": 1
 				},
 				"name": "btnOnayla",
-				"parent": "flexLayout5_1",
+				"parent": "flOnayla",
 				"children": []
 			}
 		},
@@ -1641,9 +1644,9 @@
 					"positionType": "ABSOLUTE"
 				},
 				"name": "imageView1",
-				"parent": "flexLayout5_1",
+				"parent": "flOnayla",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/ileri.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=2&brandModel=iPhone%207"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/ileri.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.6055079692668102"
 			}
 		},
 		{
@@ -1723,7 +1726,7 @@
 				"name": "imageView2",
 				"parent": "flBack",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/geri.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=2&brandModel=iPhone%207?random=0.49209477290315196"
+				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/geri.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.9876540730651413"
 			}
 		}
 	]
