@@ -188,15 +188,18 @@ function onayla() {
 			flPin.marginLeft = originalMarginLeft;
 			flPin.marginRight = originalMarginRight;
 		}).complete(function() {
+			page.animating = false;
 			btnOnayla.touchEnabled = true;
 			tbCode.text = "";
 			tbCode.onTextChanged();
-			page.animating = false;
 		});
 	}
 	else {
 		tbCode.removeFocus();
-		Router.go("pgDashboard");
+		setTimeout(function() {
+			Router.go("pgDashboard");
+		}, 150);
+
 	}
 }
 

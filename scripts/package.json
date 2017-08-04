@@ -4,6 +4,7 @@
     "google-libphonenumber": "^3.0.0",
     "js-base": "^1.0.0",
     "sf-core": "1.1.15-beta.4",
+    "sf-extension-alert": "git+https://github.com/alperozisik/sf-extension-alert.git",
     "sf-extension-mcs": "^2.0.1",
     "timers-smf": "git+https://github.com/alperozisik/timers-smf.git",
     "vanilla-masker": "^1.2.0"

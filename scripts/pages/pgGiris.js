@@ -13,7 +13,7 @@ const pattern = "(999) 999 99 99";
 const phoneUtil = require('google-libphonenumber').PhoneNumberUtil.getInstance();
 const PNT = require('google-libphonenumber').PhoneNumberType;
 var PNF = require('google-libphonenumber').PhoneNumberFormat;
-
+const rau = require("../lib/rau");
 
 const PgGiris = extend(PgGirisDesign)(
 	// Constructor
@@ -27,13 +27,18 @@ const PgGiris = extend(PgGirisDesign)(
 	});
 
 // Page.onShow -> This event is called when a page appears on the screen (everytime).
-function onShow(superOnShow) {
+function onShow(superOnShow, data) {
 	superOnShow();
 
 	const page = this;
 
 	const tbTelefon = page.tbTelefon;
 	tbTelefon.requestFocus();
+	if (data && data.checkUpdate) {
+		setTimeout(function() {
+			rau.checkUpdate();
+		}, 10);
+	}
 
 }
 
@@ -56,8 +61,8 @@ function onLoad(superOnLoad) {
 		var isValid = false;
 		try {
 			var phoneNumber = phoneUtil.parse(maskedText, "tr");
-			isValid = phoneUtil.isValidNumber(phoneNumber)
-				&& phoneUtil.getNumberType(phoneNumber) === PNT.MOBILE;
+			isValid = phoneUtil.isValidNumber(phoneNumber) &&
+				phoneUtil.getNumberType(phoneNumber) === PNT.MOBILE;
 		}
 		catch (ex) {
 			isValid = false;

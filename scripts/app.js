@@ -23,14 +23,18 @@ const stylerBuilder = require("library/styler-builder");
 const settings = require("./settings.json");
 stylerBuilder.registerThemes(settings.config.theme.themes || "Defaults");
 stylerBuilder.setActiveTheme(settings.config.theme.currentTheme);
+require('sf-extension-alert');
 require("timers-smf");
+
 // Define routes and go to initial page of application
 // Router.add("page1", require("./pages/page1"));
 // Router.add("page2", require("./pages/page2"));
 Router.add("pgGiris", require("./pages/pgGiris"));
 Router.add("pgSMS", require("./pages/pgSMS"));
 Router.add("pgDashboard", require("./pages/pgDashboard"));
-Router.go("pgGiris");
+Router.go("pgGiris", {
+    checkUpdate: true
+});
 
 
 //console.log(Object.keys(global).join("; "));
