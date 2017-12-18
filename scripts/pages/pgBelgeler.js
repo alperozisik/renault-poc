@@ -4,6 +4,7 @@
 const extend = require('js-base/core/extend');
 const PgBelgelerDesign = require('ui/ui_pgBelgeler');
 const Http = require("sf-core/net/http");
+const http = new Http();
 const Image = require('sf-core/ui/image');
 
 const PgBelgeler = extend(PgBelgelerDesign)(
@@ -38,15 +39,14 @@ function loadImage() {
 	const page = this;
 	var imgRuhsat = page.imgRuhsat;
 
-	Http.request({
-			'url': global.imgRuhsat,
-			'method': 'GET',
-		},
-		function(response) {
+	http.request({
+		'url': global.imgRuhsat,
+		'method': 'GET',
+		onLoad: function(response) {
 			//console.log("image loaded");
 			imgRuhsat.image = Image.createFromBlob(response.body);
 		},
-		function(e) {
+		onError: function(e) {
 			// Handle error like:
 			if (e.statusCode === 500) {
 				console.log("Internal Server Error Occurred.");
@@ -55,7 +55,7 @@ function loadImage() {
 				console.log("Server responsed with: " + e.statusCode + ". Message is: " + e.message);
 			}
 		}
-	);
+	});
 }
 
 module && (module.exports = PgBelgeler);

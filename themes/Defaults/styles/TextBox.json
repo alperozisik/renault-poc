@@ -3,7 +3,6 @@
     "height": 70,
     "width": 200,
     "touchEnabled": true,
-    "text": "TextBox",
     "visible": true,
     "backgroundColor": "#FFFFFF",
     "alpha": 1,
@@ -15,7 +14,7 @@
       "size": 16,
       "bold": false,
       "italic": false,
-      "family": "Arial"
+      "family": "Default"
     },
     "flexProps": {
       "alignSelf": "AUTO",

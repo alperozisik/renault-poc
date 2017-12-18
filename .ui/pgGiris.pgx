@@ -2,88 +2,60 @@
 	"components": [
 		{
 			"type": "Page",
-			"id": "d4e3e6f7",
+			"id": "b9ca-40bb-cc92-2bd2",
 			"initialized": true,
-			"themeProps": {
-				"Page": "Default"
-			},
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 1 )"
 			},
 			"className": ".page",
-			"version": "6.4.3",
+			"version": "6.5.3",
 			"props": {
-				"backgroundColor": "rgba( 255, 255, 255, 1 )",
-				"orientation": "PORTRAIT",
-				"flexProps": {
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"direction": "INHERIT",
-					"flexDirection": "COLUMN",
-					"flexWrap": "NOWRAP",
-					"justifyContent": "FLEX_START"
-				},
-				"parent": null,
-				"children": [
-					"statusBar",
-					"headerBar",
-					"imgLogo",
-					"label1",
-					"flexLayout1",
-					"flexLayout5"
-				],
 				"name": "pgGiris",
-				"width": 375,
-				"height": 667
+				"children": [
+					"edc5-7bc7-21ab-59ef",
+					"aba7-e2b9-71ff-3f82",
+					"eeea-1652-a922-cae4",
+					"a1c2-0fac-dad9-46c3",
+					"a11c-ee5f-5947-2e19",
+					"8e03-0298-5708-b2b7"
+				],
+				"parent": null,
+				"orientation": "PORTRAIT"
 			}
 		},
 		{
 			"type": "StatusBar",
-			"id": "a8fcfa91",
-			"themeProps": {
-				"StatusBar": "Default"
+			"id": "edc5-7bc7-21ab-59ef",
+			"userProps": {
+				"color": "rgba( 214, 183, 52, 1 )"
 			},
-			"userProps": {},
 			"className": ".statusBar",
 			"props": {
-				"color": "#D6B734",
-				"visible": true,
-				"parent": "pgGiris",
-				"children": [],
-				"isRemovable": false,
 				"name": "statusBar",
-				"height": 20
+				"children": [],
+				"parent": "b9ca-40bb-cc92-2bd2",
+				"isRemovable": false
 			}
 		},
 		{
 			"type": "HeaderBar",
-			"id": "315ca27a",
-			"themeProps": {
-				"HeaderBar": "Default"
-			},
+			"id": "aba7-e2b9-71ff-3f82",
 			"userProps": {
 				"title": "Giriş",
 				"visible": false
 			},
 			"className": ".headerBar",
 			"props": {
-				"title": "Giriş",
-				"titleColor": "#000000",
-				"visible": false,
-				"backgroundColor": "#FFFFFF",
-				"parent": "pgGiris",
-				"children": [],
-				"isRemovable": false,
 				"name": "headerBar",
-				"height": 44
+				"title": "Giriş",
+				"children": [],
+				"parent": "b9ca-40bb-cc92-2bd2",
+				"isRemovable": false
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "10c325ca",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "eeea-1652-a922-cae4",
 			"userProps": {
 				"width": null,
 				"image": "logo.png",
@@ -93,34 +65,14 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": null,
-				"height": 64,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"image": "logo.png",
-				"top": null,
-				"marginTop": 80,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"name": "imgLogo",
-				"parent": "pgGiris",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/logo.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"parent": "b9ca-40bb-cc92-2bd2"
 			}
 		},
 		{
 			"type": "Label",
-			"id": "15c14966",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "a1c2-0fac-dad9-46c3",
 			"userProps": {
 				"width": null,
 				"height": 60,
@@ -139,43 +91,15 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": null,
-				"height": 60,
-				"touchEnabled": true,
-				"text": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.",
-				"visible": true,
-				"multiline": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 64, 64, 64, 1 )",
-				"textAlignment": "MIDCENTER",
-				"top": null,
-				"marginTop": 24,
-				"marginLeft": 37,
-				"marginRight": 37,
-				"font": {
-					"size": 16,
-					"bold": false,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"name": "label1",
-				"parent": "pgGiris",
-				"children": []
+				"text": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.",
+				"children": [],
+				"parent": "b9ca-40bb-cc92-2bd2"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "65674695",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "a11c-ee5f-5947-2e19",
 			"userProps": {
 				"width": null,
 				"height": 52,
@@ -186,38 +110,16 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 52,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"marginTop": 44,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
 				"name": "flexLayout1",
-				"parent": "pgGiris",
 				"children": [
-					"flexLayout2"
-				]
+					"6f84-e79b-2b1e-fcee"
+				],
+				"parent": "b9ca-40bb-cc92-2bd2"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "595dacdd",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "6f84-e79b-2b1e-fcee",
 			"userProps": {
 				"width": 265,
 				"height": null,
@@ -227,39 +129,17 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": 265,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "flexLayout2",
-				"parent": "flexLayout1",
 				"children": [
-					"flGolge",
-					"flexLayout3"
-				]
+					"caea-844f-e001-4fa3",
+					"1db1-2012-ab09-e43f"
+				],
+				"parent": "a11c-ee5f-5947-2e19"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "96fab1cc",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "1db1-2012-ab09-e43f",
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -274,41 +154,16 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba( 151, 151, 151, 1 )",
-				"borderWidth": 1,
-				"marginBottom": 3,
-				"marginRight": 3,
-				"borderRadius": 8,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "flexLayout3",
-				"parent": "flexLayout2",
 				"children": [
-					"tbTelefon"
-				]
+					"f2ee-c91e-1ffa-2589"
+				],
+				"parent": "6f84-e79b-2b1e-fcee"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "3859d910",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "caea-844f-e001-4fa3",
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -324,40 +179,14 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 205, 204, 51, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"left": 3,
-				"top": 3,
-				"bottom": 1,
-				"right": 1,
-				"borderRadius": 8,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "ABSOLUTE"
-				},
 				"name": "flGolge",
-				"parent": "flexLayout2",
-				"children": []
+				"children": [],
+				"parent": "6f84-e79b-2b1e-fcee"
 			}
 		},
 		{
 			"type": "TextBox",
-			"id": "2bcc2738",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "f2ee-c91e-1ffa-2589",
 			"userProps": {
 				"usePageVariable": true,
 				"text": null,
@@ -367,52 +196,27 @@
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 64, 64, 64, 1 )",
 				"borderRadius": 8,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"family": "Renault Life",
 					"size": 26
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".textBox",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"text": null,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 64, 64, 64, 1 )",
-				"textAlignment": "MIDCENTER",
-				"usePageVariable": true,
-				"hint": "Telefon Numaranız",
-				"borderRadius": 8,
-				"font": {
-					"size": 26,
-					"bold": false,
-					"italic": false,
-					"family": "Renault Life"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "tbTelefon",
-				"parent": "flexLayout3",
-				"children": []
+				"text": null,
+				"hint": "Telefon Numaranız",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "1db1-2012-ab09-e43f"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "d9e6780a",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "8e03-0298-5708-b2b7",
 			"userProps": {
 				"width": 225,
 				"height": 46,
@@ -423,40 +227,17 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 46,
-				"width": 225,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"marginTop": 46,
-				"flexProps": {
-					"alignSelf": "CENTER",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
 				"name": "flexLayout5",
-				"parent": "pgGiris",
 				"children": [
-					"btnGiris",
-					"imageView1"
-				]
+					"54dd-0b59-2375-f2d0",
+					"0d39-cb6b-cba3-04b7"
+				],
+				"parent": "b9ca-40bb-cc92-2bd2"
 			}
 		},
 		{
 			"type": "Button",
-			"id": "2896a0f2",
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
-			},
+			"id": "54dd-0b59-2375-f2d0",
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -464,51 +245,27 @@
 				"backgroundColor": "rgba( 236, 240, 241, 1 )",
 				"textColor": "rgba( 64, 64, 64, 1 )",
 				"usePageVariable": true,
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"family": "Renault Life",
 					"bold": true,
 					"size": 16
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".button",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"text": "GİRİŞ YAP",
-				"visible": true,
-				"backgroundColor": "rgba( 236, 240, 241, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 64, 64, 64, 1 )",
-				"textAlignment": "MIDCENTER",
-				"usePageVariable": true,
-				"font": {
-					"size": 16,
-					"bold": true,
-					"italic": false,
-					"family": "Renault Life"
-				},
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "AUTO",
-					"flexGrow": 1
-				},
 				"name": "btnGiris",
-				"parent": "flexLayout5",
-				"children": []
+				"text": "GİRİŞ YAP",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "8e03-0298-5708-b2b7"
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "bcd06ad7",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "0d39-cb6b-cba3-04b7",
 			"userProps": {
 				"width": 15,
 				"height": null,
@@ -522,27 +279,9 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": 15,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"image": "ileri.png",
-				"right": 11,
-				"top": 16,
-				"bottom": 16,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "ABSOLUTE"
-				},
 				"name": "imageView1",
-				"parent": "flexLayout5",
 				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/ileri.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=1&brandModel=iPhone%207"
+				"parent": "8e03-0298-5708-b2b7"
 			}
 		}
 	]

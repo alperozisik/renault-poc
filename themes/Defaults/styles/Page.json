@@ -8,7 +8,7 @@
       "flexWrap": "NOWRAP",
       "justifyContent": "FLEX_START"
     },
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#EEEEEE",
     "font": {},
     "orientation": "PORTRAIT"
   }

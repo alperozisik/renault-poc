@@ -4,6 +4,7 @@
 const extend = require('js-base/core/extend');
 const Image = require('sf-core/ui/image');
 const Http = require("sf-core/net/http");
+const http = new Http();
 const FlAracDesign = require('library/FlArac');
 
 const FlArac = extend(FlAracDesign)(
@@ -40,15 +41,14 @@ const FlArac = extend(FlAracDesign)(
 				},
 				set: function(value) {
 					if (typeof value === "string") {
-						Http.request({
-								'url': value,
-								'method': 'GET',
-							},
-							function(response) {
+						http.request({
+							'url': value,
+							'method': 'GET',
+							onLoad: function(response) {
 								//console.log("image loaded");
 								flArac.imgAraba.image = Image.createFromBlob(response.body);
 							},
-							function(e) {
+							onError: function(e) {
 								// Handle error like:
 								if (e.statusCode === 500) {
 									console.log("Internal Server Error Occurred.");
@@ -57,7 +57,7 @@ const FlArac = extend(FlAracDesign)(
 									console.log("Server responsed with: " + e.statusCode + ". Message is: " + e.message);
 								}
 							}
-						);
+						});
 					}
 				},
 				configurable: true,

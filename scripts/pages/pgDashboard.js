@@ -9,6 +9,7 @@ const Color = require('sf-core/ui/color');
 const FlArac = require("../components/FlArac");
 const mcs = require("../lib/mcs");
 const Http = require("sf-core/net/http");
+const http = new Http();
 const getCombinedStyle = require("library/styler-builder").getCombinedStyle;
 const Screen = require('sf-core/device/screen');
 const SwipeView = require('sf-core/ui/swipeview');
@@ -67,8 +68,8 @@ function onShow(superOnShow) {
 				} /**/
 			});
 		//console.log(JSON.stringify(requestOptions))
-		Http.request(requestOptions,
-			function(response) {
+		http.request(Object.assign(requestOptions, {
+			onLoad: function(response) {
 				var responseBody = response.body.toString();
 				var result = JSON.parse(responseBody);
 				flArac.plaka = result.fields.PlateNo;
@@ -80,7 +81,7 @@ function onShow(superOnShow) {
 				global.aracVerisiChanged && global.aracVerisiChanged();
 				page.flWait.visible = false;
 			},
-			function(e) {
+			onError: function(e) {
 				// Handle error like:
 				if (e.statusCode === 500) {
 					console.log("Internal Server Error Occurred.");
@@ -89,7 +90,7 @@ function onShow(superOnShow) {
 					console.log("Server responsed with: " + e.statusCode + ". Message is: " + e.message);
 				}
 			}
-		);
+		}));
 	}
 
 }

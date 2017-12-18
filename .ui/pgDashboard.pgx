@@ -2,11 +2,8 @@
 	"components": [
 		{
 			"type": "Page",
-			"id": "b2f7c89e",
+			"id": "c068-df1f-a455-527a",
 			"initialized": true,
-			"themeProps": {
-				"Page": "Default"
-			},
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"flexProps": {
@@ -14,59 +11,39 @@
 				}
 			},
 			"className": ".page",
-			"version": "6.4.3",
+			"version": "6.5.3",
 			"props": {
-				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"orientation": "PORTRAIT",
-				"flexProps": {
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"direction": "INHERIT",
-					"flexDirection": "COLUMN",
-					"flexWrap": "NOWRAP",
-					"justifyContent": "FLEX_START"
-				},
 				"parent": null,
 				"children": [
-					"statusBar",
-					"headerBar",
-					"flContent",
-					"imgShadow",
-					"flHeader",
-					"blBottomBar",
-					"flWait"
+					"c1b3-8db2-463b-f4a5",
+					"b0a9-989a-8786-0d0b",
+					"f0f5-4228-c4ff-4541",
+					"80e1-462a-3363-2fe1",
+					"e1ed-c3f7-43ac-b1c2",
+					"8773-548b-4b3c-e882",
+					"9e40-e448-c449-2041"
 				],
-				"name": "pgDashboard",
-				"width": 187.5,
-				"height": 333.5
+				"name": "pgDashboard"
 			}
 		},
 		{
 			"type": "StatusBar",
-			"id": "2dcccd96",
-			"themeProps": {
-				"StatusBar": "Default"
-			},
+			"id": "c1b3-8db2-463b-f4a5",
 			"userProps": {
 				"color": "rgba( 214, 183, 52, 1 )"
 			},
 			"className": ".statusBar",
 			"props": {
-				"color": "rgba( 214, 183, 52, 1 )",
-				"visible": true,
-				"parent": "pgDashboard",
+				"parent": "c068-df1f-a455-527a",
 				"children": [],
 				"isRemovable": false,
-				"name": "statusBar",
-				"height": 20
+				"name": "statusBar"
 			}
 		},
 		{
 			"type": "HeaderBar",
-			"id": "ee363e54",
-			"themeProps": {
-				"HeaderBar": "Default"
-			},
+			"id": "b0a9-989a-8786-0d0b",
 			"userProps": {
 				"title": "newPage001",
 				"visible": false
@@ -74,22 +51,15 @@
 			"className": ".headerBar",
 			"props": {
 				"title": "newPage001",
-				"titleColor": "#000000",
-				"visible": false,
-				"backgroundColor": "#FFFFFF",
-				"parent": "pgDashboard",
+				"parent": "c068-df1f-a455-527a",
 				"children": [],
 				"isRemovable": false,
-				"name": "headerBar",
-				"height": 44
+				"name": "headerBar"
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "1cb12dd0",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "e1ed-c3f7-43ac-b1c2",
 			"userProps": {
 				"left": 0,
 				"top": 0,
@@ -107,45 +77,17 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 81,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"left": 0,
-				"top": 0,
-				"right": 0,
-				"paddingLeft": 14,
-				"paddingRight": 14,
-				"paddingTop": 39,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "ABSOLUTE",
-					"right": 0
-				},
 				"name": "flHeader",
-				"parent": "pgDashboard",
+				"parent": "c068-df1f-a455-527a",
 				"children": [
-					"lblHeader",
-					"flAraclarim"
+					"3ab1-f1ce-7e5e-3fc1",
+					"da6a-e2e6-211e-2489"
 				]
 			}
 		},
 		{
 			"type": "Label",
-			"id": "0ce8fd22",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "3ab1-f1ce-7e5e-3fc1",
 			"userProps": {
 				"height": null,
 				"width": 230,
@@ -159,40 +101,15 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": 230,
-				"height": null,
-				"touchEnabled": true,
 				"text": "T A L I S M A N",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#000000",
-				"textAlignment": "MIDLEFT",
-				"marginLeft": 4,
-				"font": {
-					"size": 36,
-					"bold": true,
-					"italic": false,
-					"family": "Renault Life"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"name": "lblHeader",
-				"parent": "flHeader",
+				"parent": "e1ed-c3f7-43ac-b1c2",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "549b2b24",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "da6a-e2e6-211e-2489",
 			"userProps": {
 				"backgroundColor": "rgba( 208, 2, 27, 0 )",
 				"width": null,
@@ -207,41 +124,17 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 208, 2, 27, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"marginRight": 6,
-				"marginBottom": 3,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW_REVERSE",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "flAraclarim",
-				"parent": "flHeader",
+				"parent": "e1ed-c3f7-43ac-b1c2",
 				"children": [
-					"imgDrop",
-					"lblAraclarim"
+					"6bca-cd35-aead-72b8",
+					"b536-cbc5-4256-da83"
 				]
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "9eb5d842",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "6bca-cd35-aead-72b8",
 			"userProps": {
 				"width": 10,
 				"height": 10,
@@ -254,84 +147,39 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": 10,
-				"height": 10,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"image": "drop.png",
-				"marginLeft": 4,
-				"marginBottom": 3,
-				"flexProps": {
-					"alignSelf": "FLEX_END",
-					"positionType": "RELATIVE"
-				},
 				"name": "imgDrop",
-				"parent": "flAraclarim",
-				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/drop.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.6598816330402206"
+				"parent": "da6a-e2e6-211e-2489",
+				"children": []
 			}
 		},
 		{
 			"type": "Label",
-			"id": "50eb5d49",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "b536-cbc5-4256-da83",
 			"userProps": {
 				"width": null,
 				"height": null,
 				"backgroundColor": "rgba( 126, 211, 33, 0 )",
 				"textAlignment": "BOTTOMRIGHT",
 				"text": "Araçlarım",
-				"flexProps": {
-					"flexGrow": 1
-				},
 				"font": {
 					"family": "Renault Life",
 					"size": 18
+				},
+				"flexProps": {
+					"flexGrow": 1
 				}
 			},
 			"className": ".label",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
 				"text": "Araçlarım",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba( 126, 211, 33, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#000000",
-				"textAlignment": "BOTTOMRIGHT",
-				"font": {
-					"size": 18,
-					"bold": false,
-					"italic": false,
-					"family": "Renault Life"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "lblAraclarim",
-				"parent": "flAraclarim",
+				"parent": "da6a-e2e6-211e-2489",
 				"children": []
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "2557a996",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "80e1-462a-3363-2fe1",
 			"userProps": {
 				"left": 0,
 				"right": 0,
@@ -347,36 +195,14 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": null,
-				"height": 99,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "STRETCH",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"left": 0,
-				"right": 0,
-				"top": 0,
-				"image": "shadow.png",
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "ABSOLUTE",
-					"right": 0
-				},
 				"name": "imgShadow",
-				"parent": "pgDashboard",
-				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/shadow.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207"
+				"parent": "c068-df1f-a455-527a",
+				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "c90928fe",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "8773-548b-4b3c-e882",
 			"userProps": {
 				"width": null,
 				"height": 49,
@@ -386,41 +212,20 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 49,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW_REVERSE",
-					"positionType": "RELATIVE"
-				},
 				"name": "blBottomBar",
-				"parent": "pgDashboard",
+				"parent": "c068-df1f-a455-527a",
 				"children": [
-					"flRenaultum_4",
-					"flRenaultum_3",
-					"flRenaultum_2",
-					"flRenaultum_1",
-					"flRenaultum"
+					"3722-f8e3-017c-542e",
+					"8029-384e-c309-a056",
+					"517d-7501-8f46-5f65",
+					"2552-3363-40f7-c9e2",
+					"0a30-5a66-a57a-6a5f"
 				]
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "4d3d7f58",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "0a30-5a66-a57a-6a5f",
 			"userProps": {
 				"height": null,
 				"backgroundColor": "rgba( 126, 211, 33, 0 )",
@@ -433,41 +238,17 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 126, 211, 33, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"paddingLeft": null,
-				"marginLeft": null,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "flRenaultum",
-				"parent": "blBottomBar",
+				"parent": "8773-548b-4b3c-e882",
 				"children": [
-					"imbRenaultum",
-					"lblRenaultum"
+					"c275-9780-f960-6906",
+					"9904-312c-f44a-c6c5"
 				]
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "f767f66a",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "c275-9780-f960-6906",
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -478,33 +259,14 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"image": "renaultumaktif.png",
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "imbRenaultum",
-				"parent": "flRenaultum",
-				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/renaultumaktif.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.06044131633796779"
+				"parent": "0a30-5a66-a57a-6a5f",
+				"children": []
 			}
 		},
 		{
 			"type": "Label",
-			"id": "80200f81",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "9904-312c-f44a-c6c5",
 			"userProps": {
 				"text": "Renault'um",
 				"textAlignment": "MIDCENTER",
@@ -517,39 +279,15 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": null,
-				"height": 12,
-				"touchEnabled": true,
 				"text": "Renault'um",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#000000",
-				"textAlignment": "MIDCENTER",
-				"font": {
-					"size": 10,
-					"bold": false,
-					"italic": false,
-					"family": "Renault Life"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"name": "lblRenaultum",
-				"parent": "flRenaultum",
+				"parent": "0a30-5a66-a57a-6a5f",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "09ee5cf8",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "2552-3363-40f7-c9e2",
 			"userProps": {
 				"height": null,
 				"backgroundColor": "rgba( 126, 211, 33, 0 )",
@@ -562,41 +300,17 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 126, 211, 33, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"paddingLeft": null,
-				"marginLeft": null,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "flRenaultum_1",
-				"parent": "blBottomBar",
+				"parent": "8773-548b-4b3c-e882",
 				"children": [
-					"imbRenaultum_1",
-					"lblRenaultum_1"
+					"f348-26dc-5c72-f085",
+					"57da-02f9-de7c-4356"
 				]
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "2b7bef47",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "f348-26dc-5c72-f085",
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -607,33 +321,14 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"image": "konum.png",
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "imbRenaultum_1",
-				"parent": "flRenaultum_1",
-				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/konum.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.6603826539464428"
+				"parent": "2552-3363-40f7-c9e2",
+				"children": []
 			}
 		},
 		{
 			"type": "Label",
-			"id": "274d0d94",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "57da-02f9-de7c-4356",
 			"userProps": {
 				"text": "Hizmet Noktaları",
 				"textAlignment": "MIDCENTER",
@@ -646,39 +341,15 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": null,
-				"height": 12,
-				"touchEnabled": true,
 				"text": "Hizmet Noktaları",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#000000",
-				"textAlignment": "MIDCENTER",
-				"font": {
-					"size": 10,
-					"bold": false,
-					"italic": false,
-					"family": "Renault Life"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"name": "lblRenaultum_1",
-				"parent": "flRenaultum_1",
+				"parent": "2552-3363-40f7-c9e2",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "7e295444",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "517d-7501-8f46-5f65",
 			"userProps": {
 				"height": null,
 				"backgroundColor": "rgba( 126, 211, 33, 0 )",
@@ -691,41 +362,17 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 126, 211, 33, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"paddingLeft": null,
-				"marginLeft": null,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "flRenaultum_2",
-				"parent": "blBottomBar",
+				"parent": "8773-548b-4b3c-e882",
 				"children": [
-					"imbRenaultum_2",
-					"lblRenaultum_2"
+					"d3bb-b432-3922-c797",
+					"2520-73b4-1a1d-b0bb"
 				]
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "da3ba9db",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "d3bb-b432-3922-c797",
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -736,33 +383,14 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"image": "iletisim.png",
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "imbRenaultum_2",
-				"parent": "flRenaultum_2",
-				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/iletisim.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.688973796906686"
+				"parent": "517d-7501-8f46-5f65",
+				"children": []
 			}
 		},
 		{
 			"type": "Label",
-			"id": "08d43249",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "2520-73b4-1a1d-b0bb",
 			"userProps": {
 				"text": "İletişim",
 				"textAlignment": "MIDCENTER",
@@ -775,39 +403,15 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": null,
-				"height": 12,
-				"touchEnabled": true,
 				"text": "İletişim",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#000000",
-				"textAlignment": "MIDCENTER",
-				"font": {
-					"size": 10,
-					"bold": false,
-					"italic": false,
-					"family": "Renault Life"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"name": "lblRenaultum_2",
-				"parent": "flRenaultum_2",
+				"parent": "517d-7501-8f46-5f65",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "527505c9",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "8029-384e-c309-a056",
 			"userProps": {
 				"height": null,
 				"backgroundColor": "rgba( 126, 211, 33, 0 )",
@@ -820,41 +424,17 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 126, 211, 33, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"paddingLeft": null,
-				"marginLeft": null,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "flRenaultum_3",
-				"parent": "blBottomBar",
+				"parent": "8773-548b-4b3c-e882",
 				"children": [
-					"imbRenaultum_3",
-					"lblRenaultum_3"
+					"5136-de95-3600-bdd8",
+					"81bd-15a0-04d3-24de"
 				]
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "a3f0f3b9",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "5136-de95-3600-bdd8",
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -865,33 +445,14 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"image": "kampanyalar.png",
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "imbRenaultum_3",
-				"parent": "flRenaultum_3",
-				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/kampanyalar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.542279301564182"
+				"parent": "8029-384e-c309-a056",
+				"children": []
 			}
 		},
 		{
 			"type": "Label",
-			"id": "cb8f4735",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "81bd-15a0-04d3-24de",
 			"userProps": {
 				"text": "Kampanyalar",
 				"textAlignment": "MIDCENTER",
@@ -904,39 +465,15 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": null,
-				"height": 12,
-				"touchEnabled": true,
 				"text": "Kampanyalar",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#000000",
-				"textAlignment": "MIDCENTER",
-				"font": {
-					"size": 10,
-					"bold": false,
-					"italic": false,
-					"family": "Renault Life"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"name": "lblRenaultum_3",
-				"parent": "flRenaultum_3",
+				"parent": "8029-384e-c309-a056",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "9702a6e9",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "3722-f8e3-017c-542e",
 			"userProps": {
 				"height": null,
 				"backgroundColor": "rgba( 126, 211, 33, 0 )",
@@ -949,41 +486,17 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 126, 211, 33, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"paddingLeft": null,
-				"marginLeft": null,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "flRenaultum_4",
-				"parent": "blBottomBar",
+				"parent": "8773-548b-4b3c-e882",
 				"children": [
-					"imbRenaultum_4",
-					"lblRenaultum_4"
+					"dc59-bc49-52d6-483d",
+					"fa7b-17f5-2ec6-47ac"
 				]
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "3f32b486",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "dc59-bc49-52d6-483d",
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -994,33 +507,14 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "NORMAL",
-				"backgroundColor": "rgba(0,0,0,0)",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"image": "ayarlar.png",
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "imbRenaultum_4",
-				"parent": "flRenaultum_4",
-				"children": [],
-				"imageURL": "https://dispatcher.r0.smartface.io/smartface9/renault/ui-editor/img/ayarlar.png?os=iOS&osVersion=10.2&density=326&densityRatio=0.5&zoomLevel=0.5&brandModel=iPhone%207?random=0.08670458088536215"
+				"parent": "3722-f8e3-017c-542e",
+				"children": []
 			}
 		},
 		{
 			"type": "Label",
-			"id": "0cd1b7fc",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "fa7b-17f5-2ec6-47ac",
 			"userProps": {
 				"text": "Ayarlar",
 				"textAlignment": "MIDCENTER",
@@ -1033,39 +527,15 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": null,
-				"height": 12,
-				"touchEnabled": true,
 				"text": "Ayarlar",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "#000000",
-				"textAlignment": "MIDCENTER",
-				"font": {
-					"size": 10,
-					"bold": false,
-					"italic": false,
-					"family": "Renault Life"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"name": "lblRenaultum_4",
-				"parent": "flRenaultum_4",
+				"parent": "3722-f8e3-017c-542e",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "c843ff69",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "f0f5-4228-c4ff-4541",
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -1077,41 +547,18 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
 				"usePageVariable": true,
-				"marginTop": 81,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "flContent",
-				"parent": "pgDashboard",
+				"parent": "c068-df1f-a455-527a",
 				"children": [
-					"scrollView1"
+					"8945-b394-ec37-6fc7"
 				]
 			}
 		},
 		{
 			"type": "ScrollView",
-			"id": "7685c87e",
+			"id": "8945-b394-ec37-6fc7",
 			"hiddenComponent": false,
-			"themeProps": {
-				"Sizes": "Default"
-			},
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -1124,44 +571,19 @@
 			},
 			"className": ".scrollView",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"align": "VERTICAL",
-				"scrollBarEnabled": false,
-				"layoutHeight": 650,
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "scrollView1",
-				"parent": "flContent",
+				"parent": "f0f5-4228-c4ff-4541",
 				"children": [
-					"flArac",
-					"flTabHeader",
-					"flSwipeContent"
+					"b966-8214-26ea-8667",
+					"ca4d-9533-5831-d6c1",
+					"912a-266e-128e-9803"
 				]
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "af7364b2",
-			"themeProps": {
-				"Sizes": "Default"
-			},
+			"id": "912a-266e-128e-9803",
 			"userProps": {
 				"width": null,
 				"usePageVariable": true,
@@ -1170,41 +592,19 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 350,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
 				"usePageVariable": true,
-				"paddingTop": 25,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
 				"name": "flSwipeContent",
-				"parent": "scrollView1",
+				"parent": "8945-b394-ec37-6fc7",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "2b9df6f9",
+			"id": "b966-8214-26ea-8667",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
-				"id": "86855140"
-			},
-			"themeProps": {
-				"Sizes": "Default"
+				"id": "7cb1-5cb9-ab1a-947b"
 			},
 			"userProps": {
 				"left": 0,
@@ -1219,57 +619,22 @@
 				"flexProps": {
 					"right": 0,
 					"positionType": "RELATIVE"
-				},
-				"flex": {
-					"right": 0,
-					"positionType": 0
 				}
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 280,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 208, 2, 27, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"left": 0,
-				"top": 0,
-				"right": 0,
-				"paddingLeft": 22,
-				"paddingRight": 22,
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"right": 0
-				},
 				"name": "flArac",
-				"parent": "scrollView1",
-				"children": [
-					"imgAraba",
-					"flexLayout1",
-					"flexLayout1_1"
-				]
+				"parent": "8945-b394-ec37-6fc7",
+				"children": []
 			}
 		},
 		{
 			"type": "ImageView",
-			"id": "340f74bd",
+			"id": "44c4-278e-6efe-a533",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -1282,36 +647,18 @@
 			},
 			"className": ".imageView",
 			"props": {
-				"width": null,
-				"height": 177,
-				"touchEnabled": true,
-				"visible": true,
-				"imageFillType": "ASPECTFIT",
-				"backgroundColor": "rgba( 74, 144, 226, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"marginLeft": null,
-				"marginRight": 22,
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"name": "imgAraba",
-				"parent": "flArac",
+				"parent": "b966-8214-26ea-8667",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "d7e45a1a",
+			"id": "fc73-e55f-c446-e5c2",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -1322,41 +669,20 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 46,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "SPACE_BETWEEN",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
 				"name": "flexLayout1",
-				"parent": "flArac",
+				"parent": "b966-8214-26ea-8667",
 				"children": [
-					"label1",
-					"lblModel"
+					"d9a5-3a1f-f7b9-ba80",
+					"af4f-d372-1566-15c0"
 				]
 			}
 		},
 		{
 			"type": "Label",
-			"id": "a45daa37",
+			"id": "d9a5-3a1f-f7b9-ba80",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -1370,42 +696,18 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": null,
-				"height": 14,
-				"touchEnabled": true,
 				"text": "ARAÇ MODELİ",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 128, 128, 128, 1 )",
-				"textAlignment": "MIDLEFT",
-				"font": {
-					"size": 12,
-					"bold": false,
-					"italic": false,
-					"family": "Rubik"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"name": "label1",
-				"parent": "flexLayout1",
+				"parent": "fc73-e55f-c446-e5c2",
 				"children": []
 			}
 		},
 		{
 			"type": "Label",
-			"id": "174c7564",
+			"id": "af4f-d372-1566-15c0",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"usePageVariable": true,
@@ -1420,43 +722,19 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": null,
-				"height": 27,
-				"touchEnabled": true,
-				"text": "<Model>",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 64, 64, 64, 1 )",
-				"textAlignment": "MIDLEFT",
 				"usePageVariable": true,
-				"font": {
-					"size": 22,
-					"bold": false,
-					"italic": false,
-					"family": "Renault Life"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
+				"text": "<Model>",
 				"name": "lblModel",
-				"parent": "flexLayout1",
+				"parent": "fc73-e55f-c446-e5c2",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "61608a63",
+			"id": "b93d-71b3-6003-81bd",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -1469,42 +747,20 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 50,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"paddingTop": 9,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "SPACE_BETWEEN",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
 				"name": "flexLayout1_1",
-				"parent": "flArac",
+				"parent": "b966-8214-26ea-8667",
 				"children": [
-					"label1_1",
-					"flexLayout2"
+					"ce56-77d3-e393-138e",
+					"54fb-7d81-f99e-b241"
 				]
 			}
 		},
 		{
 			"type": "Label",
-			"id": "6a5f9562",
+			"id": "ce56-77d3-e393-138e",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -1519,43 +775,18 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": null,
-				"height": 14,
-				"touchEnabled": true,
 				"text": "PLAKA",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 128, 128, 128, 1 )",
-				"textAlignment": "MIDLEFT",
-				"marginTop": 0,
-				"font": {
-					"size": 12,
-					"bold": false,
-					"italic": false,
-					"family": "Rubik"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"name": "label1_1",
-				"parent": "flexLayout1_1",
+				"parent": "b93d-71b3-6003-81bd",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "2416d6a0",
+			"id": "54fb-7d81-f99e-b241",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"height": 24,
@@ -1566,42 +797,20 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 24,
-				"width": 200,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"marginTop": 2,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
-				},
 				"name": "flexLayout2",
-				"parent": "flexLayout1_1",
+				"parent": "b93d-71b3-6003-81bd",
 				"children": [
-					"flPlakaMavi",
-					"lblPlaka"
+					"20a2-26a1-d083-0b41",
+					"34bc-705d-18cd-a4c9"
 				]
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "ecc8518e",
+			"id": "20a2-26a1-d083-0b41",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"backgroundColor": "rgba( 97, 207, 233, 1 )",
@@ -1615,40 +824,17 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": 10.5,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 97, 207, 233, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"borderRadius": 3,
-				"marginRight": -3,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE"
-				},
 				"name": "flPlakaMavi",
-				"parent": "flexLayout2",
+				"parent": "54fb-7d81-f99e-b241",
 				"children": []
 			}
 		},
 		{
 			"type": "Label",
-			"id": "79d693ce",
+			"id": "34bc-705d-18cd-a4c9",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"width": 105,
@@ -1667,45 +853,20 @@
 			},
 			"className": ".label",
 			"props": {
-				"width": 105,
-				"height": null,
-				"touchEnabled": true,
-				"text": "<Plaka>",
-				"visible": true,
-				"multiline": false,
-				"backgroundColor": "rgba( 245, 245, 245, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 100, 100, 100, 1 )",
-				"textAlignment": "MIDCENTER",
-				"marginLeft": null,
 				"usePageVariable": true,
-				"font": {
-					"size": 18,
-					"bold": false,
-					"italic": false,
-					"family": "Rubik"
-				},
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
+				"text": "<Plaka>",
 				"name": "lblPlaka",
-				"parent": "flexLayout2",
+				"parent": "54fb-7d81-f99e-b241",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "c498c7d2",
+			"id": "ca4d-9533-5831-d6c1",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__",
-				"id": "3285f10f"
-			},
-			"themeProps": {
-				"Sizes": "Default"
+				"id": "644b-2e1b-4beb-9a9f"
 			},
 			"userProps": {
 				"left": 0,
@@ -1719,56 +880,22 @@
 				"flexProps": {
 					"right": 0,
 					"positionType": "RELATIVE"
-				},
-				"flex": {
-					"right": 0,
-					"positionType": 0
 				}
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 27,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"left": 0,
-				"top": 0,
-				"right": 0,
-				"paddingLeft": 21,
-				"paddingRight": 21,
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"right": 0
-				},
 				"name": "flTabHeader",
-				"parent": "scrollView1",
-				"children": [
-					"flTabsTopButtonArea",
-					"flTabBottomBarArea"
-				]
+				"parent": "8945-b394-ec37-6fc7",
+				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "0fb9c0b3",
+			"id": "9335-8b94-b98e-d2a2",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -1780,44 +907,21 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "flTabsTopButtonArea",
-				"parent": "flTabHeader",
+				"parent": "ca4d-9533-5831-d6c1",
 				"children": [
-					"btnIslemler",
-					"btnDetaylar",
-					"btnBelgeler"
+					"688f-f570-766a-ad43",
+					"e96f-3841-9777-4ee5",
+					"d90f-ca79-1d2a-ec40"
 				]
 			}
 		},
 		{
 			"type": "Button",
-			"id": "f2dcbed3",
+			"id": "688f-f570-766a-ad43",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
 			},
 			"userProps": {
 				"text": "İŞLEMLER",
@@ -1836,44 +940,19 @@
 			},
 			"className": ".button",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
 				"text": "İŞLEMLER",
-				"visible": true,
-				"backgroundColor": "rgba( 0, 161, 241, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 64, 64, 64, 1 )",
-				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
-				"font": {
-					"size": 16,
-					"bold": true,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "AUTO",
-					"flexGrow": 1
-				},
 				"name": "btnIslemler",
-				"parent": "flTabsTopButtonArea",
+				"parent": "9335-8b94-b98e-d2a2",
 				"children": []
 			}
 		},
 		{
 			"type": "Button",
-			"id": "29b10a55",
+			"id": "e96f-3841-9777-4ee5",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
 			},
 			"userProps": {
 				"text": "DETAYLAR",
@@ -1892,44 +971,19 @@
 			},
 			"className": ".button",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
 				"text": "DETAYLAR",
-				"visible": true,
-				"backgroundColor": "rgba( 0, 161, 241, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 64, 64, 64, 1 )",
-				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
-				"font": {
-					"size": 16,
-					"bold": true,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "AUTO",
-					"flexGrow": 1
-				},
 				"name": "btnDetaylar",
-				"parent": "flTabsTopButtonArea",
+				"parent": "9335-8b94-b98e-d2a2",
 				"children": []
 			}
 		},
 		{
 			"type": "Button",
-			"id": "ea8ea449",
+			"id": "d90f-ca79-1d2a-ec40",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default",
-				"Highlights": "Default"
 			},
 			"userProps": {
 				"text": "BELGELER",
@@ -1948,43 +1002,19 @@
 			},
 			"className": ".button",
 			"props": {
-				"width": null,
-				"height": null,
-				"touchEnabled": true,
 				"text": "BELGELER",
-				"visible": true,
-				"backgroundColor": "rgba( 0, 161, 241, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"textColor": "rgba( 64, 64, 64, 1 )",
-				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
-				"font": {
-					"size": 16,
-					"bold": true,
-					"italic": false,
-					"family": "Lato"
-				},
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "AUTO",
-					"flexGrow": 1
-				},
 				"name": "btnBelgeler",
-				"parent": "flTabsTopButtonArea",
+				"parent": "9335-8b94-b98e-d2a2",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "eda669dc",
+			"id": "4e21-8796-46f8-de6a",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"height": 4,
@@ -1995,42 +1025,21 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 4,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "ROW",
-					"positionType": "RELATIVE"
-				},
 				"name": "flTabBottomBarArea",
-				"parent": "flTabHeader",
+				"parent": "ca4d-9533-5831-d6c1",
 				"children": [
-					"flTabBottomPlaceholderLeft",
-					"flTabBottomIndicator",
-					"flTabBottomPlaceholderRight"
+					"4c14-263d-4b43-515d",
+					"3918-c5c3-38f6-cd03",
+					"3ec2-05f4-e4ea-bbbc"
 				]
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "7ded58a1",
+			"id": "4c14-263d-4b43-515d",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -2043,40 +1052,18 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 0
-				},
 				"name": "flTabBottomPlaceholderLeft",
-				"parent": "flTabBottomBarArea",
+				"parent": "4e21-8796-46f8-de6a",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "4aacc548",
+			"id": "3918-c5c3-38f6-cd03",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -2088,40 +1075,18 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 200,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 206, 0, 1 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 1
-				},
 				"name": "flTabBottomIndicator",
-				"parent": "flTabBottomBarArea",
+				"parent": "4e21-8796-46f8-de6a",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "6101045a",
+			"id": "3ec2-05f4-e4ea-bbbc",
 			"hiddenComponent": false,
 			"source": {
 				"page": "__library__"
-			},
-			"themeProps": {
-				"Sizes": "Default"
 			},
 			"userProps": {
 				"width": null,
@@ -2133,35 +1098,15 @@
 			},
 			"className": ".flexLayout",
 			"props": {
-				"height": 200,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
 				"usePageVariable": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "STRETCH",
-					"justifyContent": "FLEX_START",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "RELATIVE",
-					"flexGrow": 2
-				},
 				"name": "flTabBottomPlaceholderRight",
-				"parent": "flTabBottomBarArea",
+				"parent": "4e21-8796-46f8-de6a",
 				"children": []
 			}
 		},
 		{
 			"type": "FlexLayout",
-			"id": "88be57da",
-			"themeProps": {},
+			"id": "9e40-e448-c449-2041",
 			"userProps": {
 				"width": null,
 				"height": null,
@@ -2179,71 +1124,23 @@
 				}
 			},
 			"props": {
-				"name": "flWait",
-				"isReady": true,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"direction": "INHERIT",
-					"alignContent": "STRETCH",
-					"alignItems": "CENTER",
-					"justifyContent": "CENTER",
-					"flexWrap": "NOWRAP",
-					"flexDirection": "COLUMN",
-					"positionType": "ABSOLUTE",
-					"right": 0,
-					"bottom": 0
-				},
-				"height": null,
-				"width": null,
-				"touchEnabled": true,
-				"visible": true,
-				"backgroundColor": "#FFFFFF",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"parent": "pgDashboard",
-				"children": [
-					"activityIndicator1"
-				],
 				"usePageVariable": true,
-				"left": 0,
-				"top": 0,
-				"right": 0,
-				"bottom": 0
+				"name": "flWait",
+				"parent": "c068-df1f-a455-527a",
+				"children": [
+					"a28e-036a-fe38-28c6"
+				]
 			}
 		},
 		{
 			"type": "ActivityIndicator",
-			"id": "709f5df5",
-			"themeProps": {},
+			"id": "a28e-036a-fe38-28c6",
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )"
 			},
 			"props": {
 				"name": "activityIndicator1",
-				"isReady": true,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "AUTO"
-				},
-				"touchEnabled": true,
-				"width": 42,
-				"height": 42,
-				"color": "#ADADAD",
-				"visible": true,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"alpha": 1,
-				"borderColor": "rgba(0,0,0,1)",
-				"borderWidth": 0,
-				"font": {},
-				"minHeight": 21,
-				"minWidth": 21,
-				"input": {
-					"height": 21,
-					"width": 21
-				},
-				"parent": "flWait",
+				"parent": "9e40-e448-c449-2041",
 				"children": []
 			}
 		}
