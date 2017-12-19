@@ -23,6 +23,8 @@ const FlTabHeader = extend(FlTabHeaderDesign)(
 			btnIslemler = flTabHeader.btnIslemler;
 
 
+
+
 		flTabHeader.moveTo = function moveTo(index) {
 			if (index === flTabHeader.currentIndex)
 				return;
@@ -30,14 +32,20 @@ const FlTabHeader = extend(FlTabHeaderDesign)(
 				case 0:
 					flTabBottomPlaceholderRight.flexGrow = 2;
 					flTabBottomPlaceholderLeft.flexGrow = 0;
+					flTabBottomPlaceholderRight.flexBasis = -1;
+					flTabBottomPlaceholderLeft.flexBasis = 0;
 					break;
 				case 1:
 					flTabBottomPlaceholderRight.flexGrow = 1;
 					flTabBottomPlaceholderLeft.flexGrow = 1;
+					flTabBottomPlaceholderRight.flexBasis = -1;
+					flTabBottomPlaceholderLeft.flexBasis = -1;
 					break;
 				case 2:
 					flTabBottomPlaceholderRight.flexGrow = 0;
 					flTabBottomPlaceholderLeft.flexGrow = 2;
+					flTabBottomPlaceholderRight.flexBasis = 0;
+					flTabBottomPlaceholderLeft.flexBasis = -1;
 					break;
 			}
 			flTabHeader.currentIndex = index;
